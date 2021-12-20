@@ -1,0 +1,29 @@
+﻿<Window x:Class="WPFtest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="User Interface" Height="355" Width="338">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Label>Name:</Label>
+        <TextBox x:Name ="Name" Grid.Column="1" Margin="0,0,0,10" />
+        <Label Grid.Row="1">Password:</Label>
+        <PasswordBox x:Name ="Password" Grid.Row="1" Grid.Column="1" Margin="0,0,0,10" />
+        <Label Grid.Row="2">E-mail:</Label>
+        <TextBox x:Name ="Email" Grid.Row="2" Grid.Column="1" Margin="0,0,0,10" />
+        <Label Grid.Row="3">Comment:</Label>
+        <TextBox x:Name ="Comment" Grid.Row="3" Grid.Column="1" AcceptsReturn="True" />
+
+        <Button Grid.Row="4" x:Name="Submit" Content="Submit" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="2" Click="Submit_Click"/>
+        <Button Grid.Row="4" x:Name="Login" Content="Login" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="2" Click="Login_Click"/>
+    </Grid>
+</Window>
