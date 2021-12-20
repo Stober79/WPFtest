@@ -1,5 +1,6 @@
 ﻿
 using System.Windows;
+using System.Windows.Forms;
 
 
 
@@ -13,12 +14,13 @@ namespace LogIn
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start(Application.ResourceAssembly.Location);
-            Application.Current.Shutdown();
+            System.Diagnostics.Process.Start(System.Windows.Application.ResourceAssembly.Location);
+            System.Windows.Application.Current.Shutdown();
         }
     }
 }
