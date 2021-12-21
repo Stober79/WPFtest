@@ -45,3 +45,5 @@ D:\Projects\WPFtest\WPFtest\obj\Debug\WPFtest.pdb
 D:\Projects\WPFtest\WPFtest\bin\Debug\Users.exe
 D:\Projects\WPFtest\WPFtest\bin\Debug\Users.pdb
 D:\Projects\WPFtest\WPFtest\bin\Debug\Users.exe.config
+D:\Projects\WPFtest\WPFtest\bin\Debug\UserModel.dll
+D:\Projects\WPFtest\WPFtest\bin\Debug\UserModel.pdb

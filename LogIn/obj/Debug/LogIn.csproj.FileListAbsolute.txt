@@ -36,3 +36,5 @@ D:\Projects\WPFtest\LogIn\bin\Debug\Users.exe.config
 D:\Projects\WPFtest\LogIn\obj\Debug\LogIn.csproj.CopyComplete
 D:\Projects\WPFtest\LogIn\bin\Debug\Newtonsoft.Json.dll
 D:\Projects\WPFtest\LogIn\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\WPFtest\LogIn\bin\Debug\UserModel.dll
+D:\Projects\WPFtest\LogIn\bin\Debug\UserModel.pdb

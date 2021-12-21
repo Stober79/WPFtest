@@ -63,7 +63,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="UserData.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -108,6 +107,10 @@
     <ProjectReference Include="..\LogIn\LogIn.csproj">
       <Project>{74acc3fe-372c-43cb-b20a-c1333e63e624}</Project>
       <Name>LogIn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserModel\UserModel.csproj">
+      <Project>{2bd89e82-c430-41b7-9cf6-582f4ae522e7}</Project>
+      <Name>UserModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

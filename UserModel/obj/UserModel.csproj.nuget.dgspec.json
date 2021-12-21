@@ -30,7 +30,7 @@
         },
         "frameworks": {
           "net472": {
-            "targetAlias": "net472",
+            "targetAlias": "net4.7.2-windows",
             "projectReferences": {}
           }
         },
@@ -42,7 +42,7 @@
       },
       "frameworks": {
         "net472": {
-          "targetAlias": "net472",
+          "targetAlias": "net4.7.2-windows",
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }

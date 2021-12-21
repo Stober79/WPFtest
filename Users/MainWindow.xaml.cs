@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Windows;
+using UserModel;
 
 namespace Users
 {
@@ -19,22 +20,12 @@ namespace Users
         }
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start(System.Windows.Application.ResourceAssembly.Location);
-            System.Windows.Application.Current.Shutdown();
+            System.Diagnostics.Process.Start(Application.ResourceAssembly.Location);
+            Application.Current.Shutdown();
         }
         private void Close_Click(object sender, RoutedEventArgs e)
         {
             Close();
-        }
-        private class UserData
-        {
-
-            public string Name { get; set; }
-
-            public string Password { get; set; }
-            public string Email { get; set; }
-            public string Comment { get; set; }
-
         }
     }
 }

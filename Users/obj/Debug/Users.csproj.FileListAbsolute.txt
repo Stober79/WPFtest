@@ -16,3 +16,6 @@ D:\Projects\WPFtest\Users\obj\Debug\Users.pdb
 D:\Projects\WPFtest\Users\bin\Debug\Newtonsoft.Json.dll
 D:\Projects\WPFtest\Users\bin\Debug\Newtonsoft.Json.xml
 D:\Projects\WPFtest\Users\obj\Debug\Users.csproj.CopyComplete
+D:\Projects\WPFtest\Users\obj\Debug\Users.csproj.AssemblyReference.cache
+D:\Projects\WPFtest\Users\bin\Debug\UserModel.dll
+D:\Projects\WPFtest\Users\bin\Debug\UserModel.pdb

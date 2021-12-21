@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "74acc3fe-372c-43cb-b20a-c1333e63e624": {
+      "ProjectGuid": "74acc3fe-372c-43cb-b20a-c1333e63e624",
+      "DisplayName": "LogIn",
+      "ColorIndex": 0
+    },
+    "c64bebe9-4bb6-4c4f-865f-37b945993d3a": {
+      "ProjectGuid": "c64bebe9-4bb6-4c4f-865f-37b945993d3a",
+      "DisplayName": "Users",
+      "ColorIndex": 1
+    },
+    "1ebbb1a9-673a-4992-bb2d-efb0cd231e0e": {
+      "ProjectGuid": "1ebbb1a9-673a-4992-bb2d-efb0cd231e0e",
+      "DisplayName": "WPFtest",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "61a87d49-c268-4181-9a1a-48f1113cc04f": {
+      "ProjectGuid": "61a87d49-c268-4181-9a1a-48f1113cc04f",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 3
+    },
+    "e5e83931-b9c0-49ca-b6e0-39dff6c384ef": {
+      "ProjectGuid": "e5e83931-b9c0-49ca-b6e0-39dff6c384ef",
+      "DisplayName": "UserData",
+      "ColorIndex": 4
+    },
+    "7245f503-0fba-4828-a8e8-7f872e9518b9": {
+      "ProjectGuid": "7245f503-0fba-4828-a8e8-7f872e9518b9",
+      "DisplayName": "Data",
+      "ColorIndex": 5
+    },
+    "092460be-354e-4a4f-a07f-235f234d7c86": {
+      "ProjectGuid": "092460be-354e-4a4f-a07f-235f234d7c86",
+      "DisplayName": "UserViewModel",
+      "ColorIndex": 6
+    },
+    "6657d39a-e5e6-4c5c-ae17-8b890a33cad7": {
+      "ProjectGuid": "6657d39a-e5e6-4c5c-ae17-8b890a33cad7",
+      "DisplayName": "UserViewModel",
+      "ColorIndex": 7
+    },
+    "a26783ce-dabc-4227-8e4f-c5f15a09ce72": {
+      "ProjectGuid": "a26783ce-dabc-4227-8e4f-c5f15a09ce72",
+      "DisplayName": "UserViewModel",
+      "ColorIndex": 8
+    },
+    "d98e3aae-57af-4aa0-b2af-8d348c4f6a61": {
+      "ProjectGuid": "d98e3aae-57af-4aa0-b2af-8d348c4f6a61",
+      "DisplayName": "UserModel",
+      "ColorIndex": 9
+    },
+    "bc204eb8-4137-4efa-b4fb-f74e4da0a71b": {
+      "ProjectGuid": "bc204eb8-4137-4efa-b4fb-f74e4da0a71b",
+      "DisplayName": "UserModel",
+      "ColorIndex": 10
+    },
+    "25bc697b-6dd7-4ef4-988f-c7e4ec267dd3": {
+      "ProjectGuid": "25bc697b-6dd7-4ef4-988f-c7e4ec267dd3",
+      "DisplayName": "UserModel",
+      "ColorIndex": 11
+    }
+  },
+  "NextColorIndex": 12
+}

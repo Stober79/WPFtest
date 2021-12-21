@@ -1,0 +1,9 @@
+D:\Projects\WPFtest\UserModel\obj\Debug\net4.7.2-windows\UserModel.csproj.AssemblyReference.cache
+D:\Projects\WPFtest\UserModel\obj\Debug\net4.7.2-windows\UserModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\WPFtest\UserModel\obj\Debug\net4.7.2-windows\UserModel.AssemblyInfoInputs.cache
+D:\Projects\WPFtest\UserModel\obj\Debug\net4.7.2-windows\UserModel.AssemblyInfo.cs
+D:\Projects\WPFtest\UserModel\obj\Debug\net4.7.2-windows\UserModel.csproj.CoreCompileInputs.cache
+D:\Projects\WPFtest\UserModel\bin\Debug\net4.7.2-windows\UserModel.dll
+D:\Projects\WPFtest\UserModel\bin\Debug\net4.7.2-windows\UserModel.pdb
+D:\Projects\WPFtest\UserModel\obj\Debug\net4.7.2-windows\UserModel.dll
+D:\Projects\WPFtest\UserModel\obj\Debug\net4.7.2-windows\UserModel.pdb
