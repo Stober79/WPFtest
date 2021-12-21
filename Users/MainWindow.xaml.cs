@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Windows;
+using System.Windows.Navigation;
 using UserModel;
 
 namespace Users
@@ -11,9 +12,11 @@ namespace Users
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
-        {
+        {   
             InitializeComponent();
+
             string json = File.ReadAllText(@"D:\users.txt");
             var currentUserList = JsonConvert.DeserializeObject<List<UserData>>(json);
             lvUsers.ItemsSource = currentUserList;
@@ -26,6 +29,11 @@ namespace Users
         private void Close_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void GoBack_Click(object sender, RoutedEventArgs e)
+        {
+          DialogResult = false;
         }
     }
 }

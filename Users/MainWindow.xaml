@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Users"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized">
     <Grid Margin="0,0,0,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -18,7 +18,7 @@
         <Image Source="D:\Projects\WPFtest\LogIn\Image\window.jpg" Stretch="Fill" Grid.Column="0" Grid.Row="0" Margin="0,0,0,0" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
         <Button x:Name="Close" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Close" Click="Close_Click"/>
         <Button x:Name="Logout" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Content="Logout" Click="Logout_Click" Height="45" Width="92"/>
-        <Button x:Name="LisOfUsers" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Users"  Height="45" Width="92" IsEnabled="False"/>
+        <Button x:Name="GoBack" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Go Back" Click="GoBack_Click"  Height="45" Width="92"/>
         <ListView Margin="78,100,83,100" Name="lvUsers">
             <ListView.View>
                 <GridView>

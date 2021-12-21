@@ -33,13 +33,13 @@ namespace WPFtest
         public MainWindow()
         {
             InitializeComponent();
-            ListOfUsers = UsersJson();
+            ListOfUsers = GetUsersFromJson();
         }
 
 
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
-            var currentUser = AssignData();
+            var currentUser = AssignUserData();
             bool isEmailCorrect = ValidatorExtensions.IsValidEmailAddress(userData.Email);
 
             if (isEmailCorrect)
@@ -79,15 +79,23 @@ namespace WPFtest
         }
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            AssignData();
+            AssignUserData();
             if (File.Exists(@"D:\users.txt"))
             {                
                 if(IsUserCredentialsCorrect())
                 {
                     MessageBox.Show("You are logedd in");
-                    LogIn.MainWindow logIn = new LogIn.MainWindow();
-                    this.Close();
-                    logIn.Show();
+                    ClearEntredData();
+                    Hide();
+                    try
+                    {
+                        new LogIn.MainWindow().ShowDialog();
+                        ShowDialog();
+                    }
+                    catch
+                    {
+                        Close();
+                    }
                 }
                 else
                 {
@@ -100,7 +108,7 @@ namespace WPFtest
             }
 
         }
-        private UserData AssignData()
+        private UserData AssignUserData()
         {
             userData = new UserData();  
             userData.Name = Name.Text;
@@ -113,7 +121,7 @@ namespace WPFtest
         private bool IsUserCredentialsCorrect()
         {
             var newJson = JsonConvert.SerializeObject(userData);
-            var listOfUsers = UsersJson();
+            var listOfUsers = GetUsersFromJson();
             bool result= false;
             foreach(var user in listOfUsers)
             {
@@ -125,7 +133,7 @@ namespace WPFtest
             return result;  
 
         }
-        public  List<UserData>  UsersJson()
+        public  List<UserData>  GetUsersFromJson()
         {
             if (File.Exists(@"D:\users.txt"))
             {
@@ -138,6 +146,13 @@ namespace WPFtest
                 List<UserData> currentList = new List<UserData>();
                 return currentList;
             }
+        }
+        private void ClearEntredData()
+        {
+            Name.Clear();
+            Password.Clear();   
+            Email.Clear();  
+            Comment.Clear();
         }
     }
 }

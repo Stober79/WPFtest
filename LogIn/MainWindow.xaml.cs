@@ -1,8 +1,7 @@
 ﻿
 using System.Windows;
 using System.Windows.Forms;
-
-
+using System.Windows.Navigation;
 
 namespace LogIn
 {
@@ -24,16 +23,21 @@ namespace LogIn
 
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start(System.Windows.Application.ResourceAssembly.Location);
-            System.Windows.Application.Current.Shutdown();
+            DialogResult = false;
         }
 
         private void LisOfUsers_Click(object sender, RoutedEventArgs e)
         {
-
-            Users.MainWindow users = new Users.MainWindow();
-            this.Close();
-            users.Show();
+            Hide();
+            new Users.MainWindow().ShowDialog();
+            try
+            {
+                ShowDialog();
+            }
+            catch
+            {
+                Close();
+            }
         }
     }
 }
