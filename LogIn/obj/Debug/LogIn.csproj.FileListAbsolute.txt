@@ -30,3 +30,9 @@ D:\Projects\WPFtest\LogIn\obj\Debug\LogIn.csproj.GenerateResource.cache
 D:\Projects\WPFtest\LogIn\obj\Debug\LogIn.csproj.CoreCompileInputs.cache
 D:\Projects\WPFtest\LogIn\obj\Debug\LogIn.exe
 D:\Projects\WPFtest\LogIn\obj\Debug\LogIn.pdb
+D:\Projects\WPFtest\LogIn\bin\Debug\Users.exe
+D:\Projects\WPFtest\LogIn\bin\Debug\Users.pdb
+D:\Projects\WPFtest\LogIn\bin\Debug\Users.exe.config
+D:\Projects\WPFtest\LogIn\obj\Debug\LogIn.csproj.CopyComplete
+D:\Projects\WPFtest\LogIn\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\WPFtest\LogIn\bin\Debug\Newtonsoft.Json.xml

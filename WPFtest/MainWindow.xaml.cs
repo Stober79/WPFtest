@@ -1,9 +1,11 @@
 ﻿
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows;
 
@@ -25,28 +27,32 @@ namespace WPFtest
     }
     public partial class MainWindow : Window
     {
-        public UserData userData = new UserData();
+        public UserData userData { get; set; }
+        public static List<UserData> ListOfUsers = new List<UserData>();
         public MainWindow()
         {
             InitializeComponent();
+            ListOfUsers = UsersJson();
         }
 
 
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
-            AssignData();
+            var currentUser = AssignData();
             bool isEmailCorrect = ValidatorExtensions.IsValidEmailAddress(userData.Email);
+
             if (isEmailCorrect)
-            {              
+            {
                 if (ValidateData())
                 {
-
-                    var json = JsonConvert.SerializeObject(userData);
+                    ListOfUsers.Add(currentUser);
+                    var json = JsonConvert.SerializeObject(ListOfUsers);
                     Name.Clear();
                     Password.Clear();
                     Email.Clear();
                     Comment.Clear();
-                    File.WriteAllText(@"D:\"+userData.Name+".txt", json);
+                    File.WriteAllText(@"D:\users.txt", String.Empty);
+                    File.AppendAllText(@"D:\users.txt", json);
                     MessageBox.Show("User Data was saved successfully.");
                 }
             }
@@ -73,9 +79,9 @@ namespace WPFtest
         private void Login_Click(object sender, RoutedEventArgs e)
         {
             AssignData();
-            if (File.Exists(@"D:\"+userData.Name+".txt"))
+            if (File.Exists(@"D:\users.txt"))
             {                
-                if(AreCretentialsCorrect(@"D:\" + userData.Name + ".txt"))
+                if(IsUserCredentialsCorrect())
                 {
                     MessageBox.Show("You are logedd in");
                     LogIn.MainWindow logIn = new LogIn.MainWindow();
@@ -93,21 +99,44 @@ namespace WPFtest
             }
 
         }
-        private void AssignData()
+        private UserData AssignData()
         {
+            userData = new UserData();  
             userData.Name = Name.Text;
             userData.Password = Password.Password.ToString();
             userData.Email = Email.Text;
             userData.Comment = Comment.Text;
+            return userData;
 
         }
-        private bool AreCretentialsCorrect(string filePath)
+        private bool IsUserCredentialsCorrect()
         {
             var newJson = JsonConvert.SerializeObject(userData);
-            string savedUserData = File.ReadAllText(filePath);
-            bool correctName = JToken.Equals(newJson[0], savedUserData[0]);
-            bool correctPassword = JToken.Equals(newJson[1], savedUserData[1]);
-            return correctName && correctPassword;
+            var listOfUsers = UsersJson();
+            bool result= false;
+            foreach(var user in listOfUsers)
+            {
+                if(user.Name== userData.Name && user.Password == userData.Password)
+                {
+                    result = true;
+                }
+            }
+            return result;  
+
+        }
+        public  List<UserData>  UsersJson()
+        {
+            if (File.Exists(@"D:\users.txt"))
+            {
+                string json = File.ReadAllText(@"D:\users.txt");
+                return JsonConvert.DeserializeObject<List<UserData>>(json);
+            }
+            else
+            {
+                File.Create(@"D:\users.txt");
+                List<UserData> currentList = new List<UserData>();
+                return currentList;
+            }
         }
     }
 }

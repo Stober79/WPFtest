@@ -19,8 +19,21 @@ namespace LogIn
 
         private void Close_Click(object sender, RoutedEventArgs e)
         {
+            Close();
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
             System.Diagnostics.Process.Start(System.Windows.Application.ResourceAssembly.Location);
             System.Windows.Application.Current.Shutdown();
+        }
+
+        private void LisOfUsers_Click(object sender, RoutedEventArgs e)
+        {
+
+            Users.MainWindow users = new Users.MainWindow();
+            this.Close();
+            users.Show();
         }
     }
 }

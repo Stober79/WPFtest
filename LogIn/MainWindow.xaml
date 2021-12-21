@@ -5,20 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LogIn"
         mc:Ignorable="d"
-        Title="MainWindow" Height="496" Width="800">
+        Title="MainWindow" Height="546" Width="847">
 
-    <Grid>
+    <Grid Margin="0,0,0,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Image Source="D:\Projects\WPFtest\LogIn\Image\window.jpg" Stretch="Uniform" Grid.Column="0" Grid.Row="0" Margin="5,5,5,10"/>
-        <Label Grid.Row="2" Margin="0,13,0,0"></Label>
+        <Image Source="D:\Projects\WPFtest\LogIn\Image\window.jpg" Stretch="Fill" Grid.Column="0" Grid.Row="0" Margin="0,0,0,0" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
         <Button x:Name="Close" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Close" Click="Close_Click"/>
+        <Button x:Name="Logout" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Content="Logout" Click="Logout_Click" Height="45" Width="92"/>
+        <Button x:Name="LisOfUsers" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Users" Click="LisOfUsers_Click"  Height="45" Width="92"/>
 
     </Grid>
 </Window>

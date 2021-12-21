@@ -1,0 +1,32 @@
+﻿<Window x:Class="Users.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Users"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Image Source="D:\Projects\WPFtest\LogIn\Image\window.jpg" Stretch="Fill" Grid.Column="0" Grid.Row="0" Margin="0,0,0,0" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+        <Button x:Name="Close" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Close" Click="Close_Click"/>
+        <Button x:Name="Logout" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Content="Logout" Click="Logout_Click" Height="45" Width="92"/>
+        <Button x:Name="LisOfUsers" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Users"  Height="45" Width="92" IsEnabled="False"/>
+        <ListView Margin="78,100,83,100" Name="lvUsers">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Email" Width="120" DisplayMemberBinding="{Binding Email}" />
+                    <GridViewColumn Header="Comment" Width="200" DisplayMemberBinding="{Binding Comment}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

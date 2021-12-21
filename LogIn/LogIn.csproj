@@ -99,5 +99,14 @@
   <ItemGroup>
     <Folder Include="Image\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="window.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Users\Users.csproj">
+      <Project>{c64bebe9-4bb6-4c4f-865f-37b945993d3a}</Project>
+      <Name>Users</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

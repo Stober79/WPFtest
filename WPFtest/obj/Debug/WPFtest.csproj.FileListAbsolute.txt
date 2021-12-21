@@ -42,3 +42,6 @@ D:\Projects\WPFtest\WPFtest\obj\Debug\WPFtest.csproj.CoreCompileInputs.cache
 D:\Projects\WPFtest\WPFtest\obj\Debug\WPFtest.csproj.CopyComplete
 D:\Projects\WPFtest\WPFtest\obj\Debug\WPFtest.exe
 D:\Projects\WPFtest\WPFtest\obj\Debug\WPFtest.pdb
+D:\Projects\WPFtest\WPFtest\bin\Debug\Users.exe
+D:\Projects\WPFtest\WPFtest\bin\Debug\Users.pdb
+D:\Projects\WPFtest\WPFtest\bin\Debug\Users.exe.config
